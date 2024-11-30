@@ -1,0 +1,65 @@
+[
+  {
+    "imageSrc": "img/falcon shoes/1.webp",
+    "hoverSrc": "img/falcon shoes/2.webp",
+    "itemName": "Falcon shoes - Women",
+    "price": "$180",
+    "dataPrice": "180"
+  },
+  {
+    "imageSrc": "img/4DFWD 4 RUNNING SHOES - women/1.avif",
+    "hoverSrc": "img/4DFWD 4 RUNNING SHOES - women/2.avif",
+    "itemName": "4DFWD - Running shoes - women",
+    "price": "$220",
+    "dataPrice": "220"
+  },
+  {
+    "imageSrc": "img/harden shoes/1.avif",
+    "hoverSrc": "img/harden shoes/2.avif",
+    "itemName": "Harden volume shoes - Women",
+    "price": "$320",
+    "dataPrice": "320"
+  },
+  {
+    "imageSrc": "img/Adifom Superstar Winter Boot Shoes/1.avif",
+    "hoverSrc": "img/Adifom Superstar Winter Boot Shoes/2.avif",
+    "itemName": "Adifom Superstar Winter Boot Shoes",
+    "price": "$120",
+    "dataPrice": "120"
+  },
+  {
+    "imageSrc": "img/Codechaos Boot Spikeless Golf Shoes/1.avif",
+    "hoverSrc": "img/Codechaos Boot Spikeless Golf Shoes/2.avif",
+    "itemName": "Codechaos Boot Spikeless Golf Shoes",
+    "price": "$250",
+    "dataPrice": "250"
+  },
+  {
+    "imageSrc": "img/Rivalry Mule Shoes/1.png",
+    "hoverSrc": "img/Rivalry Mule Shoes/2.avif",
+    "itemName": "Rivalry Mule Shoes",
+    "price": "$70",
+    "dataPrice": "70"
+  },
+  {
+    "imageSrc": "img/Adilette Platform Clogs/1.avif",
+    "hoverSrc": "img/Adilette Platform Clogs/2.avif",
+    "itemName": "Adilette Platform Clogs",
+    "price": "$60",
+    "dataPrice": "60"
+  },
+  {
+    "imageSrc": "img/Adilette Clogs/1.avif",
+    "hoverSrc": "img/Adilette Clogs/2.avif",
+    "itemName": "Adilette Clogs",
+    "price": "$80",
+    "dataPrice": "80"
+  },
+  {
+    "imageSrc": "img/Stella McCartney Clogs/1.avif",
+    "hoverSrc": "img/Stella McCartney Clogs/2.avif",
+    "itemName": "Stella McCartney Clogs",
+    "price": "$150",
+    "dataPrice": "150"
+  }
+]

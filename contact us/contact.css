@@ -1,0 +1,347 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: "Nunito Sans", Alexandria;
+  font-size: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  right: 0;
+  left: 0;
+  /*padding-bottom: 20px;*/
+  /*margin-bottom: 15px;*/
+}
+
+header.scrolled{
+  background-color: black;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, padding 0.3s ease;
+  padding: 10px;
+  display: inline-block;
+}
+
+header a:hover {
+  background-color: rgb(230, 213, 183);
+  transform: scale(1.1);
+  /* Smooth effect without layout shift */
+  padding: 20px;
+}
+
+header img {
+  width: 85px;
+  height: auto;
+  border-radius: 15px;
+  margin-left: 50px;
+}
+
+.navig {
+  display: flex;
+  gap: 10px;
+  padding: 0 35px;
+  font-size: 16px;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.dropbtn {
+  background-color: black;
+  color: white;
+  border: 0;
+  font-weight: bold;
+  padding: 10px 10px;
+  margin-left: 10px;
+
+}
+
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+
+}
+
+.dropdown-content a {
+  float: none;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(99, 99, 93);
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+header .hamburger {
+  flex-direction: column;
+  gap: 5px;
+  display: none;
+  cursor: pointer;
+}
+
+header .hamburger span {
+  width: 30px;
+  height: 5px;
+  border-radius: 50px;
+  background-color: white;
+}
+
+#navMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgb(62, 61, 61);
+  height: 100vh;
+  gap: 20px;
+  padding: 20px;
+  position: fixed;
+  display: none;
+  z-index: 1000;
+  top: 0;
+}
+
+.small-navig {
+  background-color: #3E3D3D;
+  display: flex;
+}
+
+.small-navig a {
+  text-decoration: none;
+  color: white;
+  padding: 7px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0, 3s ease;
+}
+
+.small-navig a:hover {
+  background-color: rgb(158, 158, 34);
+}
+
+@media screen and (max-width: 668px) {
+
+  header img {
+    margin-left: 15px;
+  }
+
+  header .navig {
+    display: none;
+  }
+
+  header .hamburger {
+    display: flex;
+  }
+
+  #navMenu {
+    z-index: 10000;
+    display: flex;
+    transition: all .5s ease-in-out;
+    right: -200%;
+    flex-direction: column;
+  }
+
+  #navMenu.active {
+    display: flex;
+  }
+
+  .small-navig {
+    display: flex;
+  }
+
+  .small-navig {
+    position: fixed;
+    top: 130px;
+    gap: 10px;
+    padding: 10px 20px;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+    height: 100vh;
+  }
+
+  .small-navig a {
+    padding: 7px;
+    width: 100%;
+    background-color: gray;
+    text-align: center;
+    border-radius: 10px;
+  }
+}
+
+.wrapper {
+  width: 100%;
+  height: 400px;
+  background-image: url("hero-contact-4cf9fa21.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.wrapper h2 {
+  color: white;
+  font-size: 45px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+  font-size: 25px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.companyinfo {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 3px;
+  border: 1px solid rgb(211, 211, 211);
+  padding: 20px;
+
+}
+
+p {
+  opacity: 0.7;
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 25px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+.help {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.enter {
+  border: 1px solid rgb(211, 211, 211);
+  padding: 20px;
+}
+
+.enter div {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+
+form input {
+  height: 40px;
+  width: 400px;
+}
+
+select {
+  height: 30px;
+}
+
+#lastenter {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+#lastenter input {
+  width: 15px;
+
+}
+
+#btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 250px;
+  margin-left: 140px;
+}
+
+.info {
+  margin-left: 100px;
+  padding: 30px;
+
+}
+
+@media screen and (max-width: 872px) {
+  .help {
+    flex-direction: column;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #000;
+  padding: 10px 10px 30px;
+  gap: 20px;
+  color: #fff;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+  justify-content: center;
+  font-size: 17px;
+
+}
+
+footer img {
+  width: 50px;
+  height: auto;
+  border-radius: 15px;
+}
+
+footer p {
+  font-size: 15px;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 25px;
+}

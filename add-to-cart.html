@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="add-to-cart-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Cart</title>
+
+</head>
+<body>
+
+
+    <header>
+        <img src="logo.png" alt="">
+        <div class="navig">
+            <a href="Homepage.html"> Home  </a> 
+            <div class="dropdown">
+             <button class="dropbtn"> Products <i class="fa fa-caret-down"> </i></button>
+             <div class="dropdown-content">
+            <a href="index.html"> Men</a> 
+            <a href="index2.html"> Women</a> 
+         </div>
+            <a href="#"> About Us  </a> 
+            <a href="#"> Contact Us</a>
+            <a href="signup.html"><i class="fas fa-user"> </i></a> 
+           <a href="add-to-cart.html"><i class="fas fa-shopping-cart"></i></a> 
+     </div>
+        <div class="hamburger" onclick="toggleMenue()">
+                <span></span>
+                <span></span>
+                <span></span>
+        </div>   
+    </header>
+    <nav id="navMenu">
+        <div class="small-navig">
+                <a href=""> Home  </a> 
+                <a href=""> Products  </a> 
+                <a href=""> About Us  </a> 
+                <a href=""> Contact Us</a> 
+                <a href="">  Log in</a> 
+                <a href=""> Cart </a> 
+                <a href=""> Check Out </a>
+        </div>
+    </nav>
+
+    <div class="header-spacer"></div>
+
+    <table id="table">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+
+    <div id="total-container">
+        <table id="total-table">
+            <tr>
+                <th>Total</th>
+                <td id="total-price">$0.00</td>
+            </tr>
+        </table>
+    </div>
+    
+
+    <button id="kaptir" style="display: none;">add kaptir</button>
+
+    <div id="warning-message"></div>
+
+    <main>
+        <div id="cart-list"></div>
+        <button id="checkout-btn" class="checkout-button">Checkout</button>
+    </main>
+
+    <!-- Popup Modal -->
+    <div id="popup" class="popup hidden">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2>Checkout Details</h2>
+            <div id="popup-details"></div>
+            <h3>Payment Information</h3>
+            <form id="payment-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="phone">Phone:</label>
+                <input type="number" id="phone" name="phone" required>
+                
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="wallet">Wallet/Payment Method:</label>
+                <select id="wallet" name="wallet" required>
+                    <option value="Credit Card">Credit Card</option>
+                    <option value="PayPal">PayPal</option>
+                    <option value="Google Pay">Google Pay</option>
+                    <option value="Apple Pay">Apple Pay</option>
+                </select>
+
+                <button type="submit" class="submit-button" id="submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="popup-alert" class="popup hidden">
+        <div class="popup-content">
+            <p></p>
+            <button id="ok-btn" class="ok-btn">Ok</button>
+        </div>
+    </div>
+    
+    <script src="script-cart.js" defer></script> 
+</body>
+</html>

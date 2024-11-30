@@ -1,0 +1,65 @@
+[
+  {
+    "imageSrc": "img/4DFWD 4 RUNNING SHOES/1.avif",
+    "hoverSrc": "img/4DFWD 4 RUNNING SHOES/2.avif",
+    "itemName": "4DFWD 4 - RUNNING SHOES",
+    "price": "$180",
+    "dataPrice": "180"
+  },
+  {
+    "imageSrc": "img/Kaptir 3.0 Shoes/1.avif",
+    "hoverSrc": "img/Kaptir 3.0 Shoes/2.avif",
+    "itemName": "Kaptir 3.0 Shoes",
+    "price": "$220",
+    "dataPrice": "220"
+  },
+  {
+    "imageSrc": "img/Ultraboost 5X Shoes/1.avif",
+    "hoverSrc": "img/Ultraboost 5X Shoes/2.avif",
+    "itemName": "Ultraboost 5X Shoes",
+    "price": "$320",
+    "dataPrice": "320"
+  },
+  {
+    "imageSrc": "img/Terrex Winter High Rain.Rdy Cold.Rdy Boots/1.avif",
+    "hoverSrc": "img/Terrex Winter High Rain.Rdy Cold.Rdy Boots/2.avif",
+    "itemName": "Terrex Winter High Rain Boots",
+    "price": "$160",
+    "dataPrice": "160"
+  },
+  {
+    "imageSrc": "img/Terrex Hydro Lace Boots/1.avif",
+    "hoverSrc": "img/Terrex Hydro Lace Boots/2.avif",
+    "itemName": "Terrex Hydro Lace Boots",
+    "price": "$100",
+    "dataPrice": "100"
+  },
+  {
+    "imageSrc": "img/Terrex Winter Leather Mid Cut/1.avif",
+    "hoverSrc": "img/Terrex Winter Leather Mid Cut/2.avif",
+    "itemName": "Terrex Winter Leather Mid Cut",
+    "price": "$150",
+    "dataPrice": "150"
+  },
+  {
+    "imageSrc": "img/Adifom IIInfinity Mules/1.avif",
+    "hoverSrc": "img/Adifom IIInfinity Mules/2.avif",
+    "itemName": "Adifom IIInfinity Mules",
+    "price": "$100",
+    "dataPrice": "100"
+  },
+  {
+    "imageSrc": "img/Adilette Clogs/1.avif",
+    "hoverSrc": "img/Adilette Clogs/2.avif",
+    "itemName": "Adilette Clogs",
+    "price": "$80",
+    "dataPrice": "80"
+  },
+  {
+    "imageSrc": "img/Adifom Stan Smith Mule Shoes/1.avif",
+    "hoverSrc": "img/Adifom Stan Smith Mule Shoes/2.avif",
+    "itemName": "Adifom Stan Smith Mule Shoes",
+    "price": "$120",
+    "dataPrice": "120"
+  }
+]

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+    <script src="contact.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <header id="header">
+        <img src="/logo.png" alt="">
+        <div class="navig">
+            <a href="/Homepage.html"> Home </a>
+            <div class="dropdown">
+                <button class="dropbtn"> Products <i class="fa fa-caret-down"> </i></button>
+                <div class="dropdown-content">
+                    <a href="/index.html"> Men</a>
+                    <a href="/index2.html"> Women</a>
+                </div>
+                <a href="/about us/about.html"> About Us </a>
+                <a href="/contact us/contact.html"> Contact Us</a>
+                <a href="/signup.html"><i class="fas fa-user"> </i></a>
+                <a href="/add-to-cart.html"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="hamburger" onclick="toggleMenue()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+    </header>
+    <nav id="navMenu">
+        <div class="navig">
+            <a href="/Homepage.html"> Home </a>
+            <div class="dropdown">
+                <button class="dropbtn"> Products <i class="fa fa-caret-down"> </i></button>
+                <div class="dropdown-content">
+                    <a href="#"> Men</a>
+                    <a href="#"> Women</a>
+                </div>
+            </div>
+            <a href=""> About Us </a>
+            <a href=""> Contact Us</a>
+            <a href="signup.html"> <i class="fas fa-user"> </i></a>
+            <a href="#"> <i class="fas fa-shopping-cart"> </i> </a>
+            <a href=""> Check Out </a>
+        </div>
+        <div class="hamburger" onclick="toggleMenue()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <div class="header-spacer"></div>
+
+    <main>
+        <div class="wrapper">
+            <h2>Contact Us</h2>
+        </div>
+        <div class="intro">
+            <h3>Let’s Start a Conversation</h3>
+        </div>
+        <section class="help">
+            <div class="companyinfo">
+                <div class="info">
+                    <h4>How we can help:</h4>
+                    <br>
+                    <br>
+                    <h5>See our platform</h5>
+                    <p>visit our website for info about us and search for the frequently asked questions</p>
+                    <br>
+                    <br>
+                    <h5>Email us</h5>
+                    <p>Send an email at our company email with your request</p>
+                    <br>
+                    <br>
+                    <h5>Fill our form</h5>
+                    <p>Fill the form you see on the screen and proceed to chat with our employee</p>
+                    <br>
+                    <br>
+                    <h4>Points of Contact</h4>
+                    <br>
+                    <br>
+                    <h5>Lebanon | Shoe Haven</h5>
+                    <p>Main road, 1130 st </p>
+                    <p>Beirut, Lebanon</p>
+                    <br>
+                    <br>
+                    <h5>Report an issue</h5>
+                    <p>+961 81 915 122</p>
+                    <br>
+                    <br>
+                    <h5>Business Collabs</h5>
+                    <p>shoehaven@outlook.com</p>
+                    <br>
+                    <br>
+                    <h5>Instagram</h5>
+                    <p>@shoe._.haven</p>
+                    <br>
+                    <br>
+                    <h5>Facebook</h5>
+                    <p>@shoe.haven</p>
+                </div>
+            </div>
+            <div class="enter">
+                <p>please note: All fields are required</p>
+                <form id="myForm" onsubmit="checkInputs(event)">
+                    <div>
+                        <label for="name">First name</label>
+                        <input type="text" id="firstname" name="name" required>
+
+                    </div>
+                    <div>
+                        <label for="lastname">Last name</label>
+                        <input type="text" id="lastname" name="lastname" required>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="">Gender</label>
+                        <select name="" id="">
+                            <option value="">Male</option>
+                            <option value="">Female</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="message">Message</label>
+                        <input type="text" id="message" name="message" required>
+
+                    </div>
+
+                    <div id="lastenter">
+                        <br>
+                        <input type="checkbox" required><label for="">I'd like to receive more information about Shoe
+                            Haven. I have read and agreed to the privacy policy <a href="">Read more.</a></label>
+                    </div>
+
+                    <button type="submit" id="btn">Send Message</button>
+                </form>
+
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <img src="logo.png" alt="logo">
+        <div class="footer-nav">
+            <a href="#">Home</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Header</a>
+        </div>
+        <p>&#169; CopyRight 2024</p>
+    </footer>
+</body>
+
+</html>

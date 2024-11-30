@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="Images/project logo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="Homepage.css">
+    <script src="Homepage.js"defer></script>
+    <title> Shoes Heaven </title>
+</head>
+<body>
+    <div id="popup" class="popup hidden">
+        <div class="popup-content">
+            <p></p>
+            <button id="ok-btn" class="ok-btn">Ok</button>
+        </div>
+    </div>
+
+    <header>
+        <img src="logo.png" alt="">
+        <div class="navig">
+               <a href="Homepage.html"> Home  </a> 
+               <div class="dropdown">
+                <button class="dropbtn"> Products <i class="fa fa-caret-down"> </i></button>
+                <div class="dropdown-content">
+               <a href="index.html"> Men</a> 
+               <a href="index2.html"> Women</a> 
+            </div>
+               <a href="/about us/about.html"> About Us  </a> 
+               <a href="/contact us/contact.html"> Contact Us</a>
+               <a href="signup.html"><i class="fas fa-user"> </i></a> 
+               <a href="add-to-cart.html"><i class="fas fa-shopping-cart"></i></a> 
+        </div>
+        <div class="hamburger" onclick="toggleMenue()">
+                <span></span>
+                <span></span>
+                <span></span>
+        </div>
+    </header>
+        <nav id="navMenu">
+            <div class="navig">
+                <a href="Homepage.html"> Home  </a> 
+                <div class="dropdown">
+                    <button class="dropbtn"> Products <i class="fa fa-caret-down"> </i></button>
+                    <div class="dropdown-content">
+                <a href="#"> Men</a> 
+                <a href="#"> Women</a> 
+                </div>
+                </div>
+                <a href=""> About Us  </a> 
+                <a href=""> Contact Us</a> 
+                <a href="signup.html"> <i class="fas fa-user"> </i></a> 
+                <a href="#"> <i class="fas fa-shopping-cart"> </i> </a> 
+                <a href=""> Check Out </a>  
+                </div>
+        <div class="hamburger" onclick="toggleMenue()">
+                <span></span>
+                <span></span>
+                <span></span>
+        </div>
+        </nav>
+
+    <div class="header-spacer"></div>
+
+    
+<section class="hero">
+        <h1> Welcome to our Website "Shoe Heaven"</h1>
+</section>
+    <div class="intro">
+    <div id="msg">
+        <button class="msg" onclick="showMessege()"> Messege For you!! </button>
+        <p id="welcomeMsg"></p>
+    </div>
+    </div>
+        <h2> Best Products of Shoes For Your Style. Your Will Not Be Disappointed! </h2>
+    <div class="ques">
+        <img src="Images/image.14.jpg">
+        <p class="par-1"> Are You Looking For The Most Comfortable And Stylish Shoes?</p>
+    </div>
+    <div class="mark">
+        <p class="par-2">Discover the perfect shoes you've always dreamed of owning—where comfort,
+            innovation, and timeless design come together. Each pair is crafted to offer the ideal balance of style and functionality,
+            providing you with footwear that supports your every step. Whether you're after everyday comfort,
+            top-tier performance, or something that makes a statement, our collection has the perfect shoes for every occasion.
+        </p>
+    <div class="pictures">
+      <a href="index2.html"> <img   src="Images/image.4.avif"> </a>
+      <a href="index2.html"> <img  src="Images/Image.5.avif">   </a>
+      <a href="index.html"> <img   src="Images/image.1.avif"> </a>
+      <a href="index.html"> <img  src="Images/image.7.avif">   </a>
+      <a href="index.html"> <img  src="Images/image.8.avif">   </a>
+    </div>
+    </div>
+    <div class="team">
+        <p class="par-3">  WE collaborated with the best Brands in the world to provide for you the best quality in shoes industry.
+             These are some of the brands that we collaborated with.
+        </p>
+        <ul class="list"> 
+            <li class="li-1"> Adidas</li>
+            <li class="li-1">  Nike</li>
+            <li class="li-1"> Timberland</li>
+            <li class="li-1"> Sketchers</li>
+        </ul>
+    </div>
+    <div class="Form">
+        <form   action="#" method="post">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <input type="number" placeholder="Your Phone Number">
+            <textarea placeholder=" Your Messege"></textarea>
+            <button class="form-btn" type="submit"> Submit </button>
+        </form>
+    </div>
+    <footer>
+        <p> Follow US:</p>
+       <div> <a href="https://twitter.com/?lang=en" target="_blank"> Twitter</a> | 
+        <a href="https://www.instagram.com/?hl=en"  target="_blank"> Instagram </a> | 
+        <a href="https://www.facebook.com/"  target="_blank"> FaceBook</a>
+    </div>
+        <p> &copy; Shoes Heaven, all Rights are Reserved</p>
+    </footer>
+</body>
+</html>
+    

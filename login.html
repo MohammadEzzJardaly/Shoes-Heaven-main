@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" type="x-icon" href="imgs/project logo.jpg">
+    <title>Shoes Heaven</title>
+    <link rel="stylesheet" href="signup.css">
+  </head>
+  <body>
+    <header>
+        <img src="imgs/project logo.jpg" alt="">
+        <div class="navig">
+               <a href="Homepage.html"> Home  </a> 
+               <div class="dropdown">
+                   <button class="dropbtn"> Products <i class="fa fa-caret-down"> </i></button>
+                   <div class="dropdown-content">
+                  <a href="index.html"> Men</a> 
+                  <a href="index2.html"> Women</a> 
+               </div>
+               </div>
+               <a href=""> About Us  </a> 
+                <a href=""> Contact Us</a> 
+                <a href="signup.html"> <i class="fas fa-user"> </i></a> 
+               <a href="add-to-cart.html"> <i class="fas fa-shopping-cart"> </i> </a>   
+               </div>
+        <div class="hamburger" onclick="toggleMenue()">
+                <span></span>
+                <span></span>
+                <span></span>
+        </div>   
+    </header>
+    <nav id="navMenu">
+        <div class="small-navig">
+                <a href=""> Home  </a> 
+                <a href=""> Men  </a> 
+                <a href=""> Women  </a> 
+                <a href=""> About Us  </a> 
+                <a href=""> Contact Us</a> 
+                <a href="">  Log in</a> 
+                <a href=""> Cart </a> 
+                <a href=""> Check Out </a>  
+        </div>
+        </nav>
+    <div class="container">
+      <form action="" id="form">
+        <div class="box">
+          <h1>Login</h1>
+          <label for="username">Username:</label>
+          <input id="username" name="username" type="text">
+        </div>
+        <div class="box">
+          <label for="password">Password:</label>
+          <input id="password" name="password" type="password">
+        </div>
+        <button type="submit" id="login">Login</button>
+      </form>
+    </div>
+    <footer>
+        <p> Follow US:</p>
+       <div> <a href="https://twitter.com/?lang=en" target="_blank"> Twitter</a> | 
+        <a href="https://www.instagram.com/?hl=en"  target="_blank"> Instagram </a> | 
+        <a href="https://www.facebook.com/"  target="_blank"> FaceBook</a>
+    </div>
+        <p> &copy; Shoes Heaven, all Rights are Reserved</p>
+    </footer>
+    <script src="sweetalert.js"></script>
+    <script src="login.js"></script>
+  </body>
+</html>
