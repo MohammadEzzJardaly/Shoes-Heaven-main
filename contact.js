@@ -28,12 +28,13 @@ let form = document.getElementById('myForm');
                 document.getElementById('navMenu').style.right = '0';
                 isToggled = true;
             }
-        }
-        
-        
-        function toggleMenue(){
-            let nav = document.getElementById("navMenu");
-            nav.classList.toggle("active");
+
+            const header = document.querySelector('header');
+            const navMenu = document.querySelector('#navMenu');
+            const nav = document.querySelector('.navig');
+            header.classList.toggle('active');
+            nav.classList.toggle('active');
+            navMenu.classList.toggle('active');
         }
 
 

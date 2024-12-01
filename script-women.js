@@ -207,33 +207,41 @@ let text = [
 
 let currentindex = 0;
 
+
+
 let nextbtn = document.getElementById("next");
 let prevbtn = document.getElementById("prev");
 let imageslider = document.getElementById("image-slider");
 let textval = document.getElementById("textval");
 
+function showpopup(message) {
+    popupcontent.textContent = message;
+    popup.classList.add("show");
+}
+
+okbtn.addEventListener("click", () => {
+    popup.classList.remove("show");
+});
+
 function updateimagetxt(direction = "next") {
-    // Determine the slide direction
     let slide = direction === "next" ? "translateX(100%)" : "translateX(-100%)";
     let reset = direction === "next" ? "translateX(-100%)" : "translateX(100%)";
 
-    // Slide out current content
+
     imageslider.style.transform = slide;
     textval.style.transform = slide;
 
     setTimeout(() => {
-        // Update the image and text after sliding out
         imageslider.src = image[currentindex];
         textval.textContent = text[currentindex];
 
-        // Reset the position and slide in new content
-        imageslider.style.transition = "none"; // Temporarily disable transition
+        imageslider.style.transition = "none";
         textval.style.transition = "none";
         imageslider.style.transform = reset;
         textval.style.transform = reset;
 
         setTimeout(() => {
-            imageslider.style.transition = "transform 0.2s ease";
+            imageslider.style.transition = "transform 0.2s ease"; 
             textval.style.transition = "transform 0.2s ease";
             imageslider.style.transform = "translateX(0)";
             textval.style.transform = "translateX(-50%)";
@@ -272,4 +280,11 @@ function toggleMenue(){
         document.getElementById('navMenu').style.right = '0';
         isToggled = true;
     }
+
+    const header = document.querySelector('header');
+    const navMenu = document.querySelector('#navMenu');
+    const nav = document.querySelector('.navig');
+    header.classList.toggle('active');
+    nav.classList.toggle('active');
+    navMenu.classList.toggle('active');
 }

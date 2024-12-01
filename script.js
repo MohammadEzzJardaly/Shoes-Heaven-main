@@ -202,7 +202,7 @@ let image = [
 let text = [
     "Vintage Combat Boots", 
     "Running Shoes", 
-    "Luxury Cap-Toes"
+    "comfort Shoes"
 ];
 
 
@@ -268,6 +268,7 @@ setInterval(() => {
 updateimagetxt();
 
 
+/*
 const addtocart = document.querySelectorAll(".add-to-cart-btn");
 
 addtocart.forEach(button => {
@@ -294,6 +295,7 @@ addtocart.forEach(button => {
     });
 });
 
+*/
 function menwomenpage() {
     const gender = document.getElementById("gender").value;
     if (gender === "Men") {
@@ -313,10 +315,11 @@ function toggleMenue(){
         document.getElementById('navMenu').style.right = '0';
         isToggled = true;
     }
-}
 
-
-function toggleMenue(){
-    let nav = document.getElementById("navMenu");
-    nav.classList.toggle("active");
+    const header = document.querySelector('header');
+    const navMenu = document.querySelector('#navMenu');
+    const nav = document.querySelector('.navig');
+    header.classList.toggle('active');
+    nav.classList.toggle('active');
+    navMenu.classList.toggle('active');
 }
