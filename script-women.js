@@ -127,15 +127,7 @@
     });
 });
 */
-function menwomenpage(){
-    const gender = document.getElementById("gender").value;
-    if(gender === "Men"){
-        window.location.href = "index.html";
-    }
-    else if(gender === "Women"){
-        window.location.href = "index2.html";
-    }
-}
+
 
 let popup = document.getElementById("popup");
 let popupcontent = document.querySelector(".popup-content p");
@@ -247,6 +239,15 @@ function updateimagetxt(direction = "next") {
             textval.style.transform = "translateX(-50%)";
         });
     }, 500);
+}
+
+function menwomenpage() {
+    const gender = document.getElementById("gender").value;
+    if (gender === "Men") {
+        window.location.href = "index.html";
+    } else if (gender === "Women") {
+        window.location.href = "index2.html";
+    }
 }
 
 

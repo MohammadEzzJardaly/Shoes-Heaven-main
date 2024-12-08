@@ -41,9 +41,7 @@ header a{
 
 header a:hover {
   background-color: rgb(230, 213, 183);
-  transform: scale(1.1); /* Smooth scaling without affecting layout */
   transition: all 0.5s ease; /* Smooth hover effect */
-  padding: 15px;
 }
 
 
@@ -81,6 +79,14 @@ header img {
   text-align: center;
   display: inline-block;
   transition: background-color 0.3s ease;
+}
+
+.dropdown-content a{
+  color: white;
+  padding: 10px;
+  text-align: left;
+  text-decoration: none;
+  display: block;
 }
 
 header .hamburger {

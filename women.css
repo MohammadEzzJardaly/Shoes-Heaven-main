@@ -43,7 +43,7 @@ header a:hover {
   background-color: rgb(230, 213, 183);
   transform: scale(1.1); /* Smooth scaling without affecting layout */
   transition: all 0.5s ease; /* Smooth hover effect */
-  padding: 15px;
+  
 }
 
 
@@ -710,6 +710,7 @@ footer img{
   transition: transform 0.3s ease, color 0.3s ease;
   font-family: 'Roboto', sans-serif;
 }
+
 .popup {
   position: fixed;
   top: 0;
