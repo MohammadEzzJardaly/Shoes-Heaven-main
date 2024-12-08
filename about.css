@@ -42,7 +42,6 @@ display: inline-block;
 header a:hover{
 background-color: rgb(230, 213, 183);
 transform: scale(1.1); /* Smooth effect without layout shift */
-padding: 20px;
 }
 
 header img {
