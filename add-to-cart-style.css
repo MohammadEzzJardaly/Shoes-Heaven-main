@@ -26,7 +26,7 @@ header {
   flex-direction: row;
 }
 .header-spacer {
-  height: 150px;
+  height: 20px;
 }
 
 
@@ -62,15 +62,9 @@ header img {
   justify-content: center;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
-}
+} 
 
-.navig{
-  text-decoration: none;
-  color: white;
-  border-radius: 5px;
-  padding: 8px 15px;
-  transition: background-color 0.3s ease;
-}
+
 
 .dropdown .dropbtn {
   color: white;

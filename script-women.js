@@ -51,12 +51,12 @@
                 });
     
                 const imgConElements = document.querySelectorAll('.img-con');
-                imgConElements.forEach(el => {
-                    el.addEventListener("mouseenter", () => {
-                        el.style.backgroundImage = `url('${el.dataset.hover}')`;
+                imgConElements.forEach(i => {
+                    i.addEventListener("mouseenter", () => {
+                        i.style.backgroundImage = `url('${i.dataset.hover}')`;
                     });
-                    el.addEventListener("mouseleave", () => {
-                        el.style.backgroundImage = `url('${el.dataset.default}')`;
+                    i.addEventListener("mouseleave", () => {
+                        i.style.backgroundImage = `url('${i.dataset.default}')`;
                     });
                 });
     
@@ -89,7 +89,6 @@
                 console.error('Error fetching the product data:', error);
             });
     });
-    
 
     /*
     let firstdefault = "img/falcon shoes/1.webp";

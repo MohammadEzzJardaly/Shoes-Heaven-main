@@ -426,20 +426,6 @@ button:hover {
     transition: opacity 0.5s ease;
 }
 
-#first {
-    background-image: url("img/falcon\ shoes/1.webp");
-}
-
-#second {
-    background-image: url("img/4DFWD\ 4\ RUNNING\ SHOES\ -\ women/1.avif");
-}
-
-#third {
-    background-image: url("img/harden\ shoes/1.avif");
-}
-
-
-
 
 .add-to-cart{
   display: flex;
@@ -630,16 +616,17 @@ footer {
     color: #fff;
   }
   
-  footer a {
+  footer a{
     text-decoration: none;
-    color: #fff;
-    justify-content: space-between;
-    gap: 40px;
-  }
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    padding: 8px;
   
-  footer img {
-    width: 120px;
-    height: auto;
+  }
+  footer a:hover{
+    background-color: rgb(230, 213, 183);
+    transition: all 0.5s ease; /* Smooth hover effect */
   }
   .form-btn{
     background-color: rgb(59, 59, 120);
