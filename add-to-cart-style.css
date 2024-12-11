@@ -26,10 +26,8 @@ header {
   flex-direction: row;
 }
 .header-spacer {
-  height: 20px;
+  height: 130px;
 }
-
-
 
 header a{
   text-decoration: none;

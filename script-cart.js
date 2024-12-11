@@ -205,3 +205,19 @@ function toggleMenue(){
     nav.classList.toggle('active');
     navMenu.classList.toggle('active');
 }
+
+// Function to clear the cart
+function clearCart() {
+    // Clear cart items from localStorage
+    localStorage.removeItem("submit-btn");
+
+    // Remove all rows from the table
+    const table = document.querySelector("#table tbody");
+    table.innerHTML = ""; // Clears all child elements (rows)
+
+    // Update the total price to $0
+    document.getElementById("total-price").textContent = "$0.00";
+}
+
+// Add event listener to the "Clear All" button
+document.getElementById("submit-btn").addEventListener("click", clearCart);
