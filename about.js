@@ -100,8 +100,3 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.querySelector('.marquee-text').textContent = 
 "Step into style, comfort, and quality! At Shoe Haven, we bring you the perfect pair for every journey. Your feet deserve the best!";
-
- 
-
-
-

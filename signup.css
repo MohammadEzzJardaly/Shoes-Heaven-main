@@ -257,7 +257,7 @@ header {
     text-align: center;
 }
 
-#form .btn{
+.btn{
     padding: 10px;
     margin-top: 10px;
     width: 100%;
@@ -266,6 +266,34 @@ header {
     background-color: black;
     color: white;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
+    font-size: 16px;
+}
+
+.btn:hover {
+  background-color: #f8c100; /* Change to a yellowish color */
+  color: black; /* Change text color */
+  transform: translateY(-3px); /* Slightly lift the button */
+}
+
+#login {
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+  border: 0;
+  border-radius: 7px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
+  font-size: 16px;
+}
+
+#login:hover{
+    background-color: #f8c100; /* Change to a yellowish color */
+    color: black; /* Change text color */
+    transform: translateY(-3px); /* Slightly lift the button */
+
 }
 
 .box{

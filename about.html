@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="about.css">
     <script src="about.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
   <div id="popup" class="popup hidden">
@@ -27,7 +32,7 @@
           <a href="index2.html">Women</a>
         </div>
       </div>
-      <a href="about us/about.html">About Us</a>
+      <a href="about.html">About Us</a>
       <a href="contact us/contact.html"> <i class="fa-solid fa-phone"></i> </a>
       <a href="/signup.html"><i class="fas fa-user"> </i></a>
       <a href="add-to-cart.html"> <i class="fas fa-shopping-cart"> </i> </a>
@@ -49,28 +54,38 @@
     </div>   
   </nav>
 </header>
-    <nav id="navMenu">
-        <div class="navig">
-            <a href="/Homepage.html"> Home  </a> 
-            <div class="dropdown">
-                <button class="dropbtn"> Products <i class="fa fa-caret-down"> </i></button>
-                <div class="dropdown-content">
-            <a href="#"> Men</a> 
-            <a href="#"> Women</a> 
-            </div>
-            </div>
-            <a href=""> About Us  </a> 
-            <a href=""> Contact Us</a> 
-            <a href="signup.html"> <i class="fas fa-user"> </i></a> 
-            <a href="#"> <i class="fas fa-shopping-cart"> </i> </a> 
-            <a href=""> Check Out </a>  
-            </div>
-    <div class="hamburger" onclick="toggleMenue()">
-            <span></span>
-            <span></span>
-            <span></span>
+<header>
+  <img src="logo.png" alt="">
+  <div class="navig">
+    <a href="Homepage.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">Products <i class="fa fa-caret-down"></i></button>
+      <div class="dropdown-content">
+        <a href="index.html">Men</a>
+        <a href="index2.html">Women</a>
+      </div>
     </div>
-    </nav>
+    <a href="/about.html">About Us</a>
+    <a href="/contact.html"> <i class="fa-solid fa-phone"></i> </a>
+    <a href="/signup.html"><i class="fas fa-user"> </i></a>
+    <a href="add-to-cart.html"> <i class="fas fa-shopping-cart"> </i> </a>
+  </div>
+  <div class="hamburger" onclick="toggleMenue()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+<nav id="navMenu">
+  <div class="small-navig">
+    <a href="Homepage.html">Home</a>
+    <a href="index.html">Products</a>
+    <a href="/about.html">About Us</a>
+    <a href="/contact.html"> <i class="fa-solid fa-phone"></i> </a>
+    <a href="/signup.html"> <i class="fas fa-user"> </i> </a>
+    <a href="add-to-cart.html"> <i class="fas fa-shopping-cart"> </i> </a>
+  </div>   
+</nav>
 
 <div class="header-spacer"></div>
 
