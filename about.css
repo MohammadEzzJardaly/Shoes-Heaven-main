@@ -15,10 +15,10 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: black;
   position: fixed;
   width: 100%;
   top: 0;
+  background-color: black;
   z-index: 100001;
   padding-bottom: 20px;
   margin-bottom: 15px;
@@ -28,8 +28,6 @@ header {
 .header-spacer {
   height: 30px;
 }
-
-
 
 header a{
   text-decoration: none;
@@ -461,4 +459,3 @@ footer {
   display: flex;
   gap: 25px;
 }
-

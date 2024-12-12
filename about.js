@@ -67,20 +67,20 @@ btn3.addEventListener("click", function(){
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    let divs = document.getElementsByTagName("div")
+    let sections = document.querySelectorAll('#section');
 
     let handleScroll = () => {
-      divs.forEach(div => {
-        let rect = div.getBoundingClientRect();
+      sections.forEach(section => {
+        let rect = section.getBoundingClientRect();
         if (rect.top <= window.innerHeight && rect.bottom >= 0) {
-          div.style.opacity = 1;
-          div.style.transition = "1s";
+          section.style.opacity = 1;
+          section.style.transition = "1s";
         } else {
-          div.style.opacity = 0;
+          section.style.opacity = 0;
         }
-      });
-    
-    };
+      });
+    
+    };
 
     
     window.addEventListener('scroll', handleScroll);
